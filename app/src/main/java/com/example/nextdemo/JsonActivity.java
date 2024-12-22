@@ -90,6 +90,12 @@ public class JsonActivity extends AppCompatActivity {
         return jsonData;
     }
 
+    private void initClick(){
+        BackTextView.setOnClickListener(v ->{
+            finish();
+        });
+    }
+
     private void initView() {
         mTextView = findViewById(R.id.jsonText);
         BackTextView = findViewById(R.id.backTextView);
